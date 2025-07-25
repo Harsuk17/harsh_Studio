@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Photo Studio - Premium Photo Frames</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .theme-light {
+            --bg-primary: #e0f2fe;
+            --bg-secondary: #bae6fd;
+            --text-primary: #0c4a6e;
+            --text-secondary: #0369a1;
+        }
+        .theme-dark {
+            --bg-primary: #082f49;
+            --bg-secondary: #0c4a6e;
+            --text-primary: #e0f2fe;
+            --text-secondary: #bae6fd;
+        }
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            transition: all 0.3s ease;
+        }
+        .card {
+            background-color: var(--bg-secondary);
+            color: var(--text-primary);
+        }
+        .price-badge {
+            background-color: var(--text-primary);
+            color: var(--bg-secondary);
+        }
+    </style>
+</head>
+<body class="theme-light min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bg-blue-800 text-white p-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/663e0d1e-f0f0-4beb-a2ea-6f619ee1af27.png" alt="Harsh Photo Studio logo - minimalist camera icon with elegant typography in gold and white" 
+                     class="h-12 w-12 mr-3 rounded-full">
+                <h1 class="text-2xl font-bold">Harsh Photo Studio</h1>
+            </div>
+            <div class="flex items-center space-x-4">
+                <div class="flex items-center">
+                    <span class="mr-2">Light</span>
+                    <label class="relative inline-flex items-center cursor-pointer">
+                        <input type="checkbox" id="theme-toggle" class="sr-only peer">
+                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-700"></div>
+                    </label>
+                    <span class="ml-2">Dark</span>
+                </div>
+                <nav class="hidden md:flex space-x-6">
+                    <a href="https://www.instagram.com/harsu_k17/" target="_blank" class="hover:text-blue-200 transition">Our Work</a>
+                    <a href="https://wa.me/919301885654" target="_blank" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition">Contact Us</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-12 px-4 md:px-0">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-5xl font-bold mb-6">Premium Photo Frames & Printing</h2>
+            <p class="text-xl mb-8">Preserve your memories with our high-quality, custom photo frames</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card rounded-xl p-6 shadow-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/01f357b5-7d2b-4844-9ab3-8793f9d04aa8.png" alt="Modern A4 photo frame with white matte border showcasing family portrait" class="w-full rounded-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">A4 Frame (8x12)</h3>
+                    <div class="price-badge inline-block px-4 py-1 rounded-full font-bold mb-4">₹299</div>
+                    <p class="mb-4">Perfect for standard photos and certificates</p>
+                    <button class="book-btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition" data-size="A4 (8x12)" data-price="299">Book Now</button>
+                </div>
+                
+                <div class="card rounded-xl p-6 shadow-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5d336495-1ce6-473b-bc4f-9ec79c2c19ac.png" alt="Elegant A3 frame in wooden finish displaying landscape photo" class="w-full rounded-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">A3 Frame (12x18)</h3>
+                    <div class="price-badge inline-block px-4 py-1 rounded-full font-bold mb-4">₹499</div>
+                    <p class="mb-4">Ideal for larger photos and artwork</p>
+                    <button class="book-btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition" data-size="A3 (12x18)" data-price="499">Book Now</button>
+                </div>
+                
+                <div class="card rounded-xl p-6 shadow-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/17e60c33-9bbb-4dd3-8981-5f039a76b33c.png" alt="Sleek black 18x24 frame showcasing wedding photo with glass protection" class="w-full rounded-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">18x24 Frame</h3>
+                    <div class="price-badge inline-block px-4 py-1 rounded-full font-bold mb-4">₹1999</div>
+                    <p class="mb-4">Professional framing for special occasions</p>
+                    <button class="book-btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition" data-size="18x24" data-price="1999">Book Now</button>
+                </div>
+                
+                <div class="card rounded-xl p-6 shadow-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/222920c3-3d7e-4c4e-91f9-5b6ff56e46fb.png" alt="High-quality 20x30 frame with modern metal design displaying cityscape" class="w-full rounded-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">20x30 Frame</h3>
+                    <div class="price-badge inline-block px-4 py-1 rounded-full font-bold mb-4">₹1599</div>
+                    <p class="mb-4">Large format for impressive display</p>
+                    <button class="book-btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition" data-size="20x30" data-price="1599">Book Now</button>
+                </div>
+                
+                <div class="card rounded-xl p-6 shadow-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1a519d99-870a-4512-9efc-d6a966a597f1.png" alt="Premium 25x35 custom frame with museum glass for professional artwork" class="w-full rounded-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">25x35 Frame</h3>
+                    <div class="price-badge inline-block px-4 py-1 rounded-full font-bold mb-4">₹2299</div>
+                    <p class="mb-4">Our largest premium framing option</p>
+                    <button class="book-btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition" data-size="25x35" data-price="2299">Book Now</button>
+                </div>
+                
+                <div class="card rounded-xl p-6 shadow-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3600ffad-86a4-4140-a788-bcb4cdd658f2.png" alt="Custom framing workstation with various frame samples and tools" class="w-full rounded-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Custom Framing</h3>
+                    <div class="price-badge inline-block px-4 py-1 rounded-full font-bold mb-4">Custom</div>
+                    <p class="mb-4">Need something special? Contact us!</p>
+                    <button onclick="window.open('https://wa.me/919301885654')" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition">WhatsApp Us</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white mt-auto py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Harsh Photo Studio</h3>
+                    <p>Preserving your precious moments with quality framing since 2015.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://www.instagram.com/harsu_k17/" target="_blank" class="hover:text-blue-300 transition">Our Work (Instagram)</a></li>
+                        <li><a href="#!" class="hover:text-blue-300 transition">Pricing</a></li>
+                        <li><a href="#!" class="hover:text-blue-300 transition">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-2">
+                        <li>📞 WhatsApp/Call: <a href="https://wa.me/919301885654" class="hover:text-blue-300 transition">9301885654</a></li>
+                        <li>📷 Instagram: <a href="https://www.instagram.com/harsu_k17/" target="_blank" class="hover:text-blue-300 transition">@harsu_k17</a></li>
+                        <li>👻 Snapchat: harsuuuh07</li>
+                        <li>📍 Chilachone Khurd, PO/ Bachai, Narsinghpur 487001</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-blue-700 mt-8 pt-6 text-center">
+                <p>© 2023 Harsh Photo Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        themeToggle.addEventListener('change', function() {
+            document.body.classList.toggle('theme-dark');
+            document.body.classList.toggle('theme-light');
+        });
+
+        // Booking via WhatsApp functionality
+        const bookButtons = document.querySelectorAll('.book-btn');
+
+        bookButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const size = this.getAttribute('data-size');
+                const price = this.getAttribute('data-price');
+                
+                const message = `Hello! I would like to book the ${size} frame for ₹${price}.`;
+                const whatsappUrl = `https://wa.me/919301885654?text=${encodeURIComponent(message)}`;
+                
+                window.open(whatsappUrl, '_blank');
+            });
+        });
+    </script>
+</body>
+</html>
